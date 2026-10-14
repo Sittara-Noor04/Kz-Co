@@ -102,7 +102,7 @@ if (cartList) {
 
     const lines = cartItems.map(it => `- ${it.name} (Rs ${it.price})`).join('\n');
     const text = `Hi KZ & Co, I want to order:\n${lines}\nTotal: Rs ${total}`;
-    orderBtn.href = 'https://wa.me/923393959786?text=' + encodeURIComponent(text);
+    orderBtn.href = 'https://wa.me/923349516080?text=' + encodeURIComponent(text);
   };
 
   cartList.addEventListener('click', (e) => {
@@ -221,7 +221,7 @@ if (contactForm) {
     const phone = document.getElementById('cPhone').value.trim();
     const msg = document.getElementById('cMsg').value.trim();
     const text = `Hi KZ & Co, I'm ${name}. ${msg} (Contact: ${phone})`;
-    window.open('https://wa.me/923393959786?text=' + encodeURIComponent(text), '_blank');
+    window.open('https://wa.me/923349516080?text=' + encodeURIComponent(text), '_blank');
   });
 }
 
