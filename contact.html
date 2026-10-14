@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | KZ & Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.3 1.1 5.8 3.6C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/>
+        </svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/>
+        </svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+        <div class="nav-icons">
+      
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- BANNER -->
+  <section class="shop-banner">
+    <h1>Contact Us</h1>
+    <div class="divider"><span>♥</span></div>
+    <p>Custom order ya koi sawal? Humein message karo.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="cName" placeholder="Your name" required>
+      <input type="tel" id="cPhone" placeholder="Phone number" required>
+      <textarea id="cMsg" rows="5" placeholder="Tell us what you'd like (flowers, colours, occasion...)" required></textarea>
+      <button type="submit" class="add-cart">Send on WhatsApp</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Get in touch</h3>
+      <p>+92 3349516080</p>
+      <p>tahir.zamanwife@gmail.com</p>
+      <p>Karachi, Pakistan</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+        <p>Handcrafted floral creations designed to make every moment special.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>+92 3349516080</p>
+        <p>tahir.zamanwife@gmail.com</p>
+        <p>Islamabad, Pakistan</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 KZ &amp; Co | Twisted Petals. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

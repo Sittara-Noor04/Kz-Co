@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KZ & Co | Twisted Petals</title>
+  <meta name="description" content="Handcrafted floral creations designed to make every moment special.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.3 1.1 5.8 3.6C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/>
+        </svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/>
+        </svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+        <div class="nav-icons">
+      
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tagline">Hand made with love</p>
+      <h1>Timeless Flowers,<br>Thoughtfully Handmade</h1>
+      <p class="subtext">Handcrafted floral creations designed to make every moment special</p>
+      <a href="shop.html" class="btn">Shop Collection</a>
+    </div>
+    <div id="hero-image">
+      <img src="images/hero.jpg" alt="Handmade pink pipe cleaner lilies">
+    </div>
+  </section>
+  <!-- FEATURES STRIP -->
+  <section class="features">
+    <div class="feature">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M5 21c0-9 5-15 15-17-1 10-7 15-15 17z"/><path d="M5 21c3-5 6-8 10-10"/>
+      </svg>
+      <div>
+        <h3>Handmade</h3>
+        <p>Crafted with love</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.400 6.700 19.400l1.200-6L3.400 9.300l6-.7L12 3z"/>
+      </svg>
+      <div>
+        <h3>Premium Quality</h3>
+        <p>Finest materials used</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M12 21s-7-4.600-9.500-9C.9 8.800 2.600 5 6.200 5c2 0 3.300 1.100 5.800 3.600C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/>
+      </svg>
+      <div>
+        <h3>Custom Orders</h3>
+        <p>Made for you</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <rect x="3" y="9" width="18" height="12" rx="1"/><path d="M12 9v12M3 13h18M12 9c-3-5-7-3-5 0M12 9c3-5 7-3 5 0"/>
+      </svg>
+      <div>
+        <h3>Perfect Gift</h3>
+        <p>For every occasion</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED COLLECTION -->
+  <section class="collection">
+    <div class="section-title">
+      <h2>Featured Collection</h2>
+      <div class="divider"><span>♥</span></div>
+      <p>Discover our handcrafted floral creations,<br>thoughtfully made for every special moment.</p>
+    </div>
+
+    <div class="slider">
+      <button class="slider-btn prev" aria-label="Previous">&#10094;</button>
+
+      <div class="slider-track" id="sliderTrack">
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/product1.jpg" alt="Blush Lily Bouquet">
+          </div>
+          <h4>Blush Lily Bouquet</h4>
+          <p class="price">Rs 1000</p>
+          <a href="shop.html#blush-lily" class="view-btn">View Details</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/product2.jpg" alt="Orchid Stem">
+          </div>
+          <h4>Orchid Stem</h4>
+          <p class="price">Rs 1000</p>
+          <a href="shop.html#orchid-stem" class="view-btn">View Details</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-img">
+            <img src="images/product3.jpg" alt="Sunset Tulip Bouquet">
+          </div>
+          <h4>Sunset Tulip Bouquet</h4>
+          <p class="price">Rs 1000</p>
+          <a href="shop.html#sunset-tulip" class="view-btn">View Details</a>
+        </article>
+        <article class="product-card">
+  <div class="product-img">
+    <img src="images/product4.jpg" alt="Product 4">
+  </div>
+  <h4>room corner bouquet</h4>
+  <p class="price">Rs 1000</p>
+  <a href="shop.html#room-corner" class="view-btn">View Details</a>
+</article>
+<article class="product-card">
+  <div class="product-img">
+    <img src="images/product5.jpg" alt="Product 5">
+  </div>
+  <h4>gift bouquet</h4>
+  <p class="price">Rs 1000</p>
+  <a href="shop.html#gift-bouquet" class="view-btn">View Details</a>
+</article>
+      </div>
+
+      <button class="slider-btn next" aria-label="Next">&#10095;</button>
+    </div>
+  </section>
+
+     <!-- ORDER CTA -->
+  <section class="order-cta">
+    <p>Want a custom bouquet? Message us directly.</p>
+    <a class="order-btn"
+       href="https://wa.me/923393959786?text=Hi%20KZ%20%26%20Co%2C%20I%20would%20like%20to%20place%20an%20order"
+       target="_blank" rel="noopener">Order on WhatsApp</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+        <p>Handcrafted floral creations designed to make every moment special.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>+92 3349516080</p>
+        <p>tahir.zamanwife@gmail.com</p>
+        <p>Islamabad, Pakistan</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 KZ &amp; Co | Twisted Petals. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

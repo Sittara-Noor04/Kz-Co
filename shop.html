@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | KZ & Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.3 1.1 5.8 3.6C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/>
+        </svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/>
+        </svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+        <div class="nav-icons">
+      
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+  </header>
+
+  <section class="shop-banner">
+    <h1>Our Collection</h1>
+    <div class="divider"><span>♥</span></div>
+    <p>Handmade flowers, made to last forever.</p>
+  </section>
+ <!-- Shop -->
+    <div class="shop-grid">
+      <article class="shop-card" id="blush-lily" data-category="bouquet">
+        <div class="card-actions">
+          <button class="wish-btn" data-name="Blush Lily Bouquet" data-price="1000" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.300 1.100 5.800 3.600C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/></svg>
+          </button>
+          <button class="share-btn" data-id="blush-lily" data-name="Blush Lily Bouquet" aria-label="Share this product">
+            <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.600 10.500l6.800-4M8.600 13.500l6.800 4"/></svg>
+          </button>
+        </div>
+        <img src="images/product1.jpg" alt="Blush Lily Bouquet">
+        <h4>Blush Lily Bouquet</h4>
+        <p class="price">Rs 1000</p>
+        <button class="add-cart" data-name="Blush Lily Bouquet" data-price="1000">Add to Cart</button>
+      </article>
+
+      <article class="shop-card" id="orchid-stem" data-category="stem">
+        <div class="card-actions">
+          <button class="wish-btn" data-name="Orchid Stem" data-price="1000" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.300 1.100 5.800 3.600C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/></svg>
+          </button>
+          <button class="share-btn" data-id="orchid-stem" data-name="Orchid Stem" aria-label="Share this product">
+            <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.600 10.500l6.800-4M8.600 13.500l6.800 4"/></svg>
+          </button>
+        </div>
+        <img src="images/product2.jpg" alt="Orchid Stem">
+        <h4>Orchid Stem</h4>
+        <p class="price">Rs 1000</p>
+        <button class="add-cart" data-name="Orchid Stem" data-price="1000">Add to Cart</button>
+      </article>
+
+      <article class="shop-card" id="sunset-tulip" data-category="bouquet">
+        <div class="card-actions">
+          <button class="wish-btn" data-name="Sunset Tulip Bouquet" data-price="1000" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.300 1.100 5.800 3.600C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/></svg>
+          </button>
+          <button class="share-btn" data-id="sunset-tulip" data-name="Sunset Tulip Bouquet" aria-label="Share this product">
+            <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.600 10.500l6.800-4M8.600 13.500l6.800 4"/></svg>
+          </button>
+        </div>
+        <img src="images/product3.jpg" alt="Sunset Tulip Bouquet">
+        <h4>Sunset Tulip Bouquet</h4>
+        <p class="price">Rs 1000</p>
+        <button class="add-cart" data-name="Sunset Tulip Bouquet" data-price="1000">Add to Cart</button>
+      </article>
+
+      <article class="shop-card" id="room-corner" data-category="pot">
+        <div class="card-actions">
+          <button class="wish-btn" data-name="room corner bouquet" data-price="1000" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.300 1.100 5.800 3.600C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/></svg>
+          </button>
+          <button class="share-btn" data-id="room-corner" data-name="room corner bouquet" aria-label="Share this product">
+            <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.600 10.500l6.800-4M8.600 13.500l6.800 4"/></svg>
+          </button>
+        </div>
+        <img src="images/product4.jpg" alt="Room Corner Bouquet">
+        <h4>room corner bouquet</h4>
+        <p class="price">Rs 1000</p>
+        <button class="add-cart" data-name="room corner bouquet" data-price="1000">Add to Cart</button>
+      </article>
+            <article class="shop-card" id="gift-bouquet" data-category="bouquet">
+        <div class="card-actions">
+          <button class="wish-btn" data-name="gift bouquet" data-price="1000" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.300 1.100 5.800 3.600C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/></svg>
+          </button>
+          <button class="share-btn" data-id="gift-bouquet" data-name="gift bouquet" aria-label="Share this product">
+            <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.600 10.500l6.800-4M8.600 13.500l6.800 4"/></svg>
+          </button>
+        </div>
+        <img src="images/product5.jpg" alt="Gift Bouquet">
+        <h4>gift bouquet</h4>
+        <p class="price">Rs 1000</p>
+        <button class="add-cart" data-name="gift bouquet" data-price="1000">Add to Cart</button>
+      </article>
+    </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+        <p>Handcrafted floral creations designed to make every moment special.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>+92 3349516080</p>
+        <p>tahir.zamanwife@gmail.com</p>
+        <p>Islamabad, Pakistan</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 KZ &amp; Co | Twisted Petals. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
