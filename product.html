@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | KZ & Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <!-- NAVBAR  -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 21s-7-4.6-9.5-9C.9 8.8 2.6 5 6.2 5c2 0 3.300 1.100 5.800 3.600C14.500 6.100 15.800 5 17.800 5c3.600 0 5.300 3.800 3.700 7-2.500 4.400-9.500 9-9.500 9z"/>
+        </svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/>
+        </svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+    <div class="nav-icons">
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="product-page">
+    <p class="breadcrumb"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="crumbName"></span></p>
+
+    <section class="product-layout">
+
+      <!-- Left: Gallery -->
+      <div class="gallery">
+        <div class="main-image"><img id="mainImg" src="" alt="Product image"></div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+
+      <!-- Middle: Info -->
+      <div class="info">
+        <h1 id="pName"></h1>
+
+        <div class="meta-row">
+          <span class="stars" id="pStars"></span>
+          <span id="pRatings" class="link-text"></span>
+          <div class="icon-actions">
+            <button id="shareBtn" class="icon-btn" title="Share" aria-label="Share this product">&#10150;</button>
+            <button id="wishBtn" class="icon-btn" title="Add to wishlist" aria-label="Add to wishlist">&#9825;</button>
+          </div>
+        </div>
+
+        <p class="brand">Brand: <span id="pBrand"></span></p>
+        <hr>
+
+        <div class="price-box">
+          <span class="price" id="pPrice"></span>
+          <div><span class="old-price" id="pOld"></span> <span class="discount" id="pDiscount"></span></div>
+        </div>
+        <hr>
+
+        <div class="option-row">
+          <span class="label">Color:</span> <strong id="colorName"></strong>
+          <div class="colors" id="colors"></div>
+        </div>
+
+        <div class="option-row">
+          <span class="label">Quantity:</span>
+          <div class="qty">
+            <button id="minus">-</button>
+            <input type="number" id="qty" value="1" min="1" readonly>
+            <button id="plus">+</button>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn btn-buy" id="buyNow">Buy Now</button>
+          <button class="btn btn-cart" id="addCart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Right: Delivery box -->
+      <aside class="side-box">
+        <h3>Delivery Options</h3>
+        <ul>
+          <li><span>Standard Delivery<br><small>3-5 working days</small></span><b>Rs. 175</b></li>
+          <li><span>Cash on Delivery Available</span></li>
+        </ul>
+        <h3>Return &amp; Warranty</h3>
+        <ul>
+          <li>14 days easy return</li>
+          <li>Handmade with care</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Tabs -->
+    <section class="details">
+      <div class="tab-buttons">
+        <button class="tab active" data-tab="desc">Description</button>
+        <button class="tab" data-tab="reviews">Reviews</button>
+      </div>
+      <div class="tab-content active" id="desc"><p id="pDesc"></p></div>
+      <div class="tab-content" id="reviews"><p>No reviews yet.</p></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="KZ & Co Twisted Petals">
+        <p>Handcrafted floral creations designed to make every moment special.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>+92 3349516080</p>
+        <p>tahir.zamanwife@gmail.com</p>
+        <p>Islamabad, Pakistan</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 KZ &amp; Co | Twisted Petals. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- main.js navbar icons, mobile menu, toast), then  product.js -->
+  <script src="main.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

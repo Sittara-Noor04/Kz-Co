@@ -936,3 +936,13 @@ body { overflow-x: hidden; }
   /* Cart / wishlist rows */
   .cart-row { flex-wrap: wrap; }
 }
+/* ===== Shop Card Link ===== */
+.shop-card .card-link { 
+  text-decoration: none; 
+  color: inherit; 
+  display: block; }
+.shop-card .card-link { 
+  color: inherit; 
+  text-decoration: none; 
+  display: block; 
+}
